@@ -21,12 +21,12 @@ orbs:
 
 job_environments:
   common_environment: &common_environment
-    APP_HOSTPATH: gcefca
     CONTAINER_PREFIX: planet4-gcefca
     WP_DB_NAME_PREFIX: planet4-gcefca_wordpress
   develop_environment: &develop_environment
     APP_ENVIRONMENT: development
     APP_HOSTNAME: www-dev.greenpeace.org
+    APP_HOSTPATH: gcefca
     CLOUDSQL_INSTANCE: p4-develop-k8s
     GOOGLE_PROJECT_ID: planet-4-151612
     GCLOUD_CLUSTER: p4-development
@@ -40,6 +40,7 @@ job_environments:
   release_environment: &release_environment
     APP_ENVIRONMENT: staging
     APP_HOSTNAME: www-stage.greenpeace.org
+    APP_HOSTPATH: gcefca
     CLOUDSQL_INSTANCE: planet4-prod
     GCLOUD_CLUSTER: planet4-production
     GOOGLE_PROJECT_ID: planet4-production
@@ -50,6 +51,7 @@ job_environments:
     WP_STATELESS_BUCKET: planet4-gcefca-stateless-release
   production_environment: &production_environment
     APP_HOSTNAME: gcef.ca
+    APP_HOSTPATH:
     CLOUDSQL_INSTANCE: planet4-prod
     GCLOUD_CLUSTER: planet4-production
     GOOGLE_PROJECT_ID: planet4-production
