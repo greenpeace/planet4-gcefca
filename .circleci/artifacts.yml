@@ -1,0 +1,42 @@
+job_environments:
+  common_environment: &common_environment
+    CONTAINER_PREFIX: planet4-gcefca
+    WP_DB_NAME_PREFIX: planet4-gcefca_wordpress
+  develop_environment: &develop_environment
+    APP_ENVIRONMENT: development
+    APP_HOSTNAME: www-dev.greenpeace.org
+    APP_HOSTPATH: gcefca
+    CLOUDSQL_INSTANCE: p4-develop-k8s
+    GOOGLE_PROJECT_ID: planet-4-151612
+    GCLOUD_CLUSTER: p4-development
+    HELM_NAMESPACE: develop
+    HELM_RELEASE: planet4-gcefca
+    NEWRELIC_APPNAME: P4 gcefca Development
+    WP_DB_NAME: planet4-gcefca_wordpress_develop
+    WP_STATELESS_BUCKET: planet4-gcefca-stateless-develop
+  release_build_env: &release_build_env
+    GOOGLE_PROJECT_ID: planet4-production
+  release_environment: &release_environment
+    APP_ENVIRONMENT: staging
+    APP_HOSTNAME: www-stage.greenpeace.org
+    APP_HOSTPATH: gcefca
+    CLOUDSQL_INSTANCE: planet4-prod
+    GCLOUD_CLUSTER: planet4-production
+    GOOGLE_PROJECT_ID: planet4-production
+    HELM_NAMESPACE: gcefca
+    HELM_RELEASE: planet4-gcefca-release
+    NEWRELIC_APPNAME: P4 gcefca Release
+    WP_DB_NAME: planet4-gcefca_wordpress_release
+    WP_STATELESS_BUCKET: planet4-gcefca-stateless-release
+  production_environment: &production_environment
+    APP_HOSTNAME: gcef.ca
+    APP_HOSTPATH:
+    CLOUDSQL_INSTANCE: planet4-prod
+    GCLOUD_CLUSTER: planet4-production
+    GOOGLE_PROJECT_ID: planet4-production
+    HELM_NAMESPACE: gcefca
+    HELM_RELEASE: planet4-gcefca-master
+    MIN_REPLICA_COUNT: 2
+    NEWRELIC_APPNAME: P4 gcefca Production
+    WP_DB_NAME: planet4-gcefca_wordpress_master
+    WP_STATELESS_BUCKET: planet4-gcefca-stateless
