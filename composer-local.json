@@ -1,12 +1,11 @@
 {
-	"name": "greenpeace/planet4-gcefca",
-	"description": "Greenpeace P4 gcefca",
-	"license": "MIT",
-	"require": {
-		"greenpeace/planet4-master-theme" : "dev-master",
-		"greenpeace/planet4-plugin-gutenberg-blocks" : "dev-master"
-	},
-	"scripts": {
-		"site:custom" : []
-	}
+  "name": "greenpeace/planet4-gcefca",
+  "description": "Greenpeace P4 gcefca",
+  "license": "MIT",
+  "require": {
+    "greenpeace/planet4-child-theme-gcefca" : "dev-main"
+  },
+  "scripts": {
+    "site:custom" : []
+  }
 }
