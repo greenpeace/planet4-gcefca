@@ -6,10 +6,13 @@
     "greenpeace/planet4-child-theme-gcefca" : "dev-main",
     "plugins/sitepress-multilingual-cms": "*",
      "plugins/wpml-translation-management": "*",
-        "plugins/wpml-string-translation": "*",
-        "plugins/wpml-media-translation": "*"
+     "plugins/wpml-string-translation": "*",
+     "plugins/wpml-media-translation": "*"
   },
   "scripts": {
-    "site:custom" : []
+    "core:language": "wp language core install fr_CA",
+        "site:custom": [
+            "@core:language"
+        ]
   }
 }
