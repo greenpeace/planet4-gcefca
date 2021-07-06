@@ -3,7 +3,8 @@
   "description": "Greenpeace P4 gcefca",
   "license": "MIT",
   "require": {
-    "greenpeace/planet4-child-theme-gcefca" : "dev-main"
+    "greenpeace/planet4-child-theme-gcefca" : "dev-main",
+    "plugins/sitepress-multilingual-cms": "*"
   },
   "scripts": {
     "site:custom" : []
