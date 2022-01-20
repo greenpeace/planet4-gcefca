@@ -13,8 +13,6 @@ job_environments:
     HELM_RELEASE: planet4-gcefca
     WP_DB_NAME: planet4-gcefca_wordpress_develop
     WP_STATELESS_BUCKET: planet4-gcefca-stateless-develop
-    INGRESS_NOTLS: false
-    INGRESS_TLS: true    
   release_build_env: &release_build_env
     GOOGLE_PROJECT_ID: planet4-production
   release_environment: &release_environment
