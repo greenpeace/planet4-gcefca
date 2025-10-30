@@ -7,7 +7,7 @@
     "plugins/sitepress-multilingual-cms": "*",
      "plugins/wpml-string-translation": "*",
      "plugins/wpml-elasticpress": "*",
-    "wpackagist-plugin/google-site-kit":"*"
+     "wpackagist-plugin/google-site-kit":"*"
   },
   "scripts": {
     "core:language": "wp language core install fr_CA",
